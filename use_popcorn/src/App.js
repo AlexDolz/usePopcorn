@@ -1,6 +1,6 @@
 import NavBar from "./components/NavBar";
 import Main from "./components/Main";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Logo from "./components/Logo";
 import Search from "./components/Search";
 import NumResults from "./components/NumResults";
@@ -56,9 +56,18 @@ const tempWatchedData = [
   },
 ];
 
+const KEY = "8e2026dc";
+
 export default function App() {
-  const [movies, setMovies] = useState(tempMovieData);
-  const [watched, setWatched] = useState(tempWatchedData);
+  const [movies, setMovies] = useState([]);
+  const [watched, setWatched] = useState([]);
+
+  useEffect(function () {
+    fetch(`http://www.omdbapi.com/?i=tt3896198&apikey=${KEY}&s=terminator
+      `)
+      .then((res) => res.json())
+      .then((data) => setMovies(data.Search));
+  }, []);
 
   return (
     <>
