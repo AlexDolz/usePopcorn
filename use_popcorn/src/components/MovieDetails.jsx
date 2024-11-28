@@ -28,13 +28,17 @@ function MovieDetails({ selectedID, onCloseMovie, onAddWatched, watched }) {
   } = movie;
 
   function handleAdd() {
+    const sanitizedRuntime =
+      runtime && runtime.includes("min")
+        ? parseInt(runtime.replace(/\D/g, ""), 10)
+        : 0;
     const newWatchedMovie = {
       imdbID: selectedID,
       title,
       year,
       poster,
       imdbRating: Number(imdbRating),
-      runtime: Number(runtime.split(" ").at(0)),
+      runtime: sanitizedRuntime,
       userRating,
     };
 
