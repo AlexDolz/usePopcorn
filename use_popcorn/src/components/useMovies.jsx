@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 const KEY = "8e2026dc";
 
-function useMovies(query) {
+export function useMovies(query) {
   const [movies, setMovies] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState("");
@@ -55,5 +55,3 @@ function useMovies(query) {
 
   return { movies, isLoading, error };
 }
-
-export default useMovies;
