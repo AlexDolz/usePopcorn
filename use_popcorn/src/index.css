@@ -46,6 +46,13 @@ body {
     padding: 1.5rem;
   }
 }
+@media (max-width: 507px) {
+  .nav-bar {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 45px;
+    height: auto;
+  }
+}
 
 .main {
   margin-top: 2.4rem;
@@ -89,14 +96,12 @@ body {
 }
 @media (max-width: 715px) {
   .box:nth-child(2) {
-    /* overflow-y: hidden; */
     max-width: 80%;
     width: auto;
   }
 }
 @media (max-width: 648px) {
   .box:nth-child(2) {
-    /* overflow-y: hidden; */
     max-width: 100%;
     width: auto;
   }
@@ -128,15 +133,50 @@ body {
     gap: 0;
   }
 }
+@media (max-width: 506px) {
+  .logo {
+    gap: 0.8rem;
+  }
+}
 
 .logo span {
   font-size: 3.2rem;
+}
+@media (max-width: 600px) {
+  .logo span {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 531px) {
+  .logo span {
+    font-size: 2.3rem;
+  }
+}
+@media (max-width: 425px) {
+  .logo span {
+    font-size: 2.1rem;
+  }
 }
 
 .logo h1 {
   font-size: 2.4rem;
   font-weight: 600;
   color: #fff;
+}
+@media (max-width: 600px) {
+  .logo h1 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 531px) {
+  .logo h1 {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 425px) {
+  .logo h1 {
+    font-size: 1.6rem;
+  }
 }
 
 .search {
@@ -187,6 +227,21 @@ body {
     width: 17rem;
   }
 }
+@media (max-width: 600px) {
+  .search {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 531px) {
+  .search {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 425px) {
+  .search {
+    font-size: 1.2rem;
+  }
+}
 
 .search::placeholder {
   color: var(--color-text-dark);
@@ -205,6 +260,22 @@ body {
 @media (max-width: 715px) {
   .num-results {
     justify-self: center;
+  }
+}
+@media (max-width: 600px) {
+  .num-results {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 507px) {
+  .num-results {
+    grid-column: 1 / 3;
+    margin-top: 10px;
+  }
+}
+@media (max-width: 425px) {
+  .num-results {
+    font-size: 1.3rem;
   }
 }
 
@@ -269,6 +340,11 @@ body {
 
 .list h3 {
   font-size: 1.8rem;
+}
+@media (max-width: 425px) {
+  .list h3 {
+    font-size: 1.6rem;
+  }
 }
 
 .list div {
@@ -387,6 +463,11 @@ body {
   font-size: 2.4rem;
   margin-bottom: 0.4rem;
   line-height: 1.1;
+}
+@media (max-width: 425px) {
+  .details-overview h2 {
+    font-size: 2rem;
+  }
 }
 
 .details-overview p {
