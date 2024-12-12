@@ -152,9 +152,14 @@ body {
     font-size: 2.3rem;
   }
 }
-@media (max-width: 425px) {
+@media (max-width: 447px) {
   .logo span {
     font-size: 2.1rem;
+  }
+}
+@media (max-width: 395px) {
+  .logo span {
+    font-size: 1.9rem;
   }
 }
 
@@ -173,9 +178,14 @@ body {
     font-size: 1.8rem;
   }
 }
-@media (max-width: 425px) {
+@media (max-width: 447px) {
   .logo h1 {
     font-size: 1.6rem;
+  }
+}
+@media (max-width: 395px) {
+  .logo h1 {
+    font-size: 1.5rem;
   }
 }
 
@@ -237,9 +247,19 @@ body {
     font-size: 1.3rem;
   }
 }
-@media (max-width: 425px) {
+@media (max-width: 447px) {
   .search {
     font-size: 1.2rem;
+  }
+}
+@media (max-width: 364px) {
+  .search {
+    width: 15rem;
+  }
+}
+@media (max-width: 343px) {
+  .search {
+    width: 13rem;
   }
 }
 
@@ -273,9 +293,14 @@ body {
     margin-top: 10px;
   }
 }
-@media (max-width: 425px) {
+@media (max-width: 447px) {
   .num-results {
     font-size: 1.3rem;
+  }
+}
+@media (max-width: 395px) {
+  .num-results {
+    font-size: 1.2rem;
   }
 }
 
@@ -341,9 +366,14 @@ body {
 .list h3 {
   font-size: 1.8rem;
 }
-@media (max-width: 425px) {
+@media (max-width: 447px) {
   .list h3 {
     font-size: 1.6rem;
+  }
+}
+@media (max-width: 395px) {
+  .list h3 {
+    font-size: 1.5rem;
   }
 }
 
@@ -423,6 +453,11 @@ body {
     height: 200px;
   }
 }
+@media (max-width: 506px) {
+  .details header {
+    height: auto;
+  }
+}
 
 .details section {
   padding: 4rem;
@@ -464,9 +499,19 @@ body {
   margin-bottom: 0.4rem;
   line-height: 1.1;
 }
-@media (max-width: 425px) {
+@media (max-width: 447px) {
   .details-overview h2 {
     font-size: 2rem;
+  }
+}
+@media (max-width: 395px) {
+  .details-overview h2 {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 364px) {
+  .details-overview {
+    padding: 1.4rem 2rem;
   }
 }
 
@@ -474,6 +519,11 @@ body {
   display: flex;
   align-items: center;
   gap: 0.8rem;
+}
+@media (max-width: 395px) {
+  .details-overview p {
+    font-size: 1.3rem;
+  }
 }
 
 .rating {
@@ -504,6 +554,16 @@ body {
 @media (max-width: 816px) {
   .rating {
     background-color: transparent;
+  }
+}
+@media (max-width: 715px) {
+  .rating > div:nth-child(1) {
+    align-self: center;
+  }
+}
+@media (max-width: 390px) {
+  .rating {
+    padding: 2rem 0;
   }
 }
 
