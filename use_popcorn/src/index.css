@@ -697,12 +697,13 @@ body {
   cursor: pointer;
   z-index: 999;
   display: flex;
-  /* align-items: center; */
+  align-items: center;
   justify-content: center;
 }
 @media (max-width: 715px) {
-  .btn-back {
-    align-items: self-start;
+  .btn-back span {
+    position: relative;
+    top: -0.1rem;
   }
 }
 

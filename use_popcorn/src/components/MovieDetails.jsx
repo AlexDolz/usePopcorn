@@ -92,7 +92,7 @@ function MovieDetails({ selectedID, onCloseMovie, onAddWatched, watched }) {
         <>
           <header>
             <button className="btn-back" onClick={onCloseMovie}>
-              &larr;
+              <span>&larr;</span>
             </button>
             <img src={poster} alt={`Poster of ${movie}`} />
             <div className="details-overview">
