@@ -700,11 +700,11 @@ body {
   /* align-items: center; */
   justify-content: center;
 }
-/* @media (max-width: 715px) {
+@media (max-width: 715px) {
   .btn-back {
-    align-items: center;
+    align-items: self-start;
   }
-} */
+}
 
 /*
 SPACING SYSTEM (px)
