@@ -64,6 +64,8 @@ body {
 @media (max-width: 715px) {
   .main {
     flex-wrap: wrap;
+    column-gap: 0;
+    row-gap: 2.4rem;
   }
 }
 
