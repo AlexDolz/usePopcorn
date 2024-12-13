@@ -529,6 +529,9 @@ body {
   .details header {
     height: 225px;
   }
+  .details {
+    margin-bottom: 20px;
+  }
 }
 @media (max-width: 506px) {
   .details header {
