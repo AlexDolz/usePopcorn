@@ -683,8 +683,7 @@ body {
   position: absolute;
   top: 0.6rem;
   left: 0.6rem;
-  /* height: 3.2rem; */
-  height: 1.8rem;
+  height: 3.2rem;
   aspect-ratio: 1;
   border-radius: 50%;
   border: none;
@@ -697,9 +696,9 @@ body {
   font-weight: bold;
   cursor: pointer;
   z-index: 999;
-  /* display: flex;
+  display: flex;
   align-items: center;
-  justify-content: center; */
+  justify-content: center;
 }
 /* @media (max-width: 715px) {
   .btn-back span {
