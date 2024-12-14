@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import StarRating from "./StarRating";
 import Loader from "./Loader";
 import { useKey } from "./useKey";
+import { IoArrowBackCircle } from "react-icons/io5";
 
 const KEY = "8e2026dc";
 
@@ -91,9 +92,7 @@ function MovieDetails({ selectedID, onCloseMovie, onAddWatched, watched }) {
       ) : (
         <>
           <header>
-            <button className="btn-back" onClick={onCloseMovie}>
-              <span>&larr;</span>
-            </button>
+            <IoArrowBackCircle className="btn-back" onClick={onCloseMovie} />
             <img src={poster} alt={`Poster of ${movie}`} />
             <div className="details-overview">
               <h2>{title}</h2>
